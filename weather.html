@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather App</title>
+    <link rel="stylesheet" type="text/css" href="styles1.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+        <div>
+            <label for="city">Enter City: </label>
+            <input type="text" id="city" />
+            <button onclick="getWeather()">Get Weather</button>
+        </div>
+        <div class="weather-info">
+            <h2>Current Weather in <span id="city-name"></span></h2>
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Thermometer_icon.png/640px-Thermometer_icon.png" width="150px">
+            <p>Temperature: <span id="temperature"></span>&deg;C</p>
+            <img src="clear.png" id="weather-image" width="150px" alt="Weather Icon">
+            <p>Weather: <span id="weather"></span></p>
+            <img src="humidity.png" >
+            <p>Humidity: <span id="humidity"></span>%</p>
+            <img src="wind.png">
+            <p>Wind Speed: <span id="windspeed"></span> Km/h</p>
+            
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
